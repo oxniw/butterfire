@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body4{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        body3{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        body{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        body1{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            min-height: 100vh;
+            transform: rotate(-90deg);
+
+        }
+        .flower{
+            position: relative;
+            width: 10vh;
+            height: 10vh;
+            background: rgb(9, 154, 216);
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border: 3px solid black;
+        }
+        .flower1{
+            position: relative;
+            width: 10vh;
+            height: 10vh;
+            background: rgb(9, 154, 216);
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            transform: rotate(-90deg);
+            border: 3px solid black;
+        }
+        .flower2{
+            position: relative;
+            width: 10vh;
+            height: 10vh;
+            background: rgb(9, 154, 216);
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            transform: rotate(90deg);
+            border: 3px solid black;
+        }
+        .flower3{
+            position: relative;
+            width: 10vh;
+            height: 10vh;
+            background: rgb(9, 154, 216);
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border: 3px solid black;
+        }
+        .headdd{
+            position: absolute;
+            background: darkcyan;
+            width: 5%;
+            height: 10%;
+            border-radius: 100%;
+            top: 38%;
+            right: 48.6%;
+            border: 2px solid black;
+            z-index: 0;
+        }
+        .eye{
+            position: absolute;
+            background: black;
+            width: 1%;
+            height: 2%;
+            border-radius: 100%;
+            top: 40%;
+            right: 49.7%;
+            z-index: 4;
+        }
+        .eye1{
+            position: absolute;
+            background: black;
+            width: 1%;
+            height: 2%;
+            border-radius: 100%;
+            top: 40%;
+            right: 52%;
+            z-index: 4;
+        }
+        .boy1{
+            position: absolute;
+            width: 6%;
+            height: 15%;
+            background: darkcyan;
+            top: 45%;
+            right: 48%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            background-image: linear-gradient(180deg, rgb(91, 176, 255) 1px, transparent 3px);
+            background-size: 10px 10px;
+            border: 2px solid black;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body3>
+    <div class="boy1"></div>
+</body3>
+<body2 style="z-index: 2;">
+    <div class="flower2"></div>
+    <div class="flower3"></div>
+</body2>
+<body1 style="z-index: 3;">
+    <div class="flower"></div>
+    <div class="flower1"></div>
+</body1>
+<body4>
+    <div class="headdd"></div>
+    <div class="eye"></div>
+    <div class="eye1"></div>
+</body4>
+</html>
