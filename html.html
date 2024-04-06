@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            min-height: 100vh;
+        }
+        .fly{
+            position: relative;
+            width: 10vh;
+            height: 10vh;
+            background: rgb(255, 255, 255);
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border: 3px solid black;
+        }
+        .fly1{
+            position: relative;
+            width: 10vh;
+            height: 10vh;
+            background: rgb(255, 255, 255);
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            transform: rotate(-90deg);
+            border: 3px solid black;
+        }
+        .fly2{
+            position: absolute;
+            width: 10vh;
+            height: 10vh;
+            background: rgb(255, 255, 255);
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            transform: rotate(90deg);
+            border: 3px solid black;
+            top: 34%;
+            right: 49.8%;
+        }
+        .fly3{
+            position: absolute;
+            width: 10vh;
+            height: 10vh;
+            background: rgb(255, 255, 255);
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border: 3px solid black;
+            top: 34%;
+            left: 50%;
+        }
+        .flyyellow{
+            position:absolute;
+            width: 3vh;
+            height: 3vh;
+            background: rgb(125, 125, 0);
+            top: 43%;
+            border-radius: 100%;
+        }
+        .flyyellow1{
+            position:absolute;
+            width: 5vh;
+            height: 5vh;
+            background: yellow;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            top: 40%;
+            left: 50%;
+        }
+        .flyyellow2{
+            position:absolute;
+            width: 5vh;
+            height: 5vh;
+            background: yellow;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            top: 44%;
+            left: 50%;
+        }
+        .flyyellow3{
+            position:absolute;
+            width: 5vh;
+            height: 5vh;
+            background: yellow;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            top: 40%;
+            right: 50%;
+        }
+        .flyyellow4{
+            position:absolute;
+            width: 5vh;
+            height: 5vh;
+            background: yellow;
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 50%;
+            top: 44%;
+            right: 50%;
+        }
+        .middd{
+            position: absolute;
+            width: 3vh;
+            height: 3vh;
+            border-radius: 50%;
+            background: rgb(124, 148, 19);
+            top: 43%;
+        }
+        .yellowset{
+            position: absolute;
+            border-top-right-radius: 100%;
+            width: 5vh;
+            height: 3vh;
+            transform: rotate(-60deg);
+            top: 30%;
+            right: 10%;
+            background-color: rgb(179, 206, 0);
+            opacity: 0.7;
+        }
+        .yellowset2{
+            position: absolute;
+            border-bottom-right-radius: 100%;
+            width: 5vh;
+            height: 3vh;
+            transform: rotate(-120deg);
+            top: 26%;
+            right: -15%;
+            background-color: rgb(179, 206, 0);
+            opacity: 0.7;
+        }
+        .yellowset3{
+            position: relative;
+            border-bottom-right-radius: 100%;
+            width: 5vh;
+            height: 3vh;
+            transform: rotate(-210deg);
+            top: -10%;
+            right: -10%;
+            background-color: rgb(179, 206, 0);
+            z-index: 0;
+            opacity: 0.7;
+        }
+        .yellowset1{
+            position: relative;
+            border-top-right-radius: 100%;
+            width: 5vh;
+            height: 3vh;
+            transform: rotate(-330deg);
+            top: -10%;
+            right: 10%;
+            background-color: rgb(179, 206, 0);
+            z-index: 0;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body style="z-index: 1;">
+    <div class="d"></div>
+    <div class="bodys"></div>
+    <div class="fly"></div>
+    <div class="fly1"></div>
+    <div class="fly2"></div>
+    <div class="fly3"></div>
+    <div class="flyyellow"></div>
+    <div class="flyyellow1">
+        <div class="yellowset"></div>
+    </div>
+    <div class="flyyellow2">
+        <div class="yellowset1"></div>
+    </div>
+    <div class="flyyellow3">
+        <div class="yellowset2"></div>
+    </div>
+    <div class="flyyellow4">
+        <div class="yellowset3"></div>
+    </div>
+    <div class="middd"></div>
+</body>
+</html>
