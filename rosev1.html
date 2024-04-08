@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(-45deg,#86469C,#BC7FCD,#FB9AD1,#FFCDEA);
+            background-size: 300% 300%;
+            animation: color 6s ease-in-out infinite;
+        }
+        .heart{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            right: 50%;
+            top: -200%;
+            animation: heart 2s linear infinite;
+        }
+        .heart::before{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            top: -50%;
+            border-radius: 50px;
+        }
+        .heart::after{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            right: -50%;
+            border-radius: 50px;
+        }
+        .heart1{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            transform: rotate(-45deg);
+            top: -200%;
+            right: 10%;
+            animation: heart1 2.5653s linear infinite;
+        }
+        .heart1::before{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            top: -50%;
+            border-radius: 50px;
+        }
+        .heart1::after{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            right: -50%;
+            border-radius: 50px;
+        }
+        .heart2{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            transform: rotate(-45deg);
+            right: 10%;
+            top: -200%;
+            animation: heart2 4.753s linear infinite;
+        }
+        .heart2::before{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            top: -50%;
+            border-radius: 50px;
+        }
+        .heart2::after{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            right: -50%;
+            border-radius: 50px;
+        }
+        .heart3{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            transform: rotate(-45deg);
+            right: 40%;
+            top: -200%;
+            animation: heart3 3.428s linear infinite;
+        }
+        .heart3::before{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            top: -50%;
+            border-radius: 50px;
+        }
+        .heart3::after{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            right: -50%;
+            border-radius: 50px;
+        }
+        .heart4{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            transform: rotate(-45deg);
+            right: 20%;
+            top: -200%;
+            animation: heart4 5.653s linear infinite;
+        }
+        .heart4::before{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            top: -50%;
+            border-radius: 50px;
+        }
+        .heart4::after{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            right: -50%;
+            border-radius: 50px;
+        }
+        .heart5{
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            right: 80%;
+            top: -200%;
+            animation: heart 2.718s linear infinite;
+        }
+        .heart5::before{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            top: -50%;
+            border-radius: 50px;
+        }
+        .heart5::after{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            right: -50%;
+            border-radius: 50px;
+        }
+        .petal{
+            position: absolute;
+            width: 9vh;
+            height: 14vh;
+            background-color: #D20062;
+            border-radius: 10% 100% 10% 25%;
+            top: -230%;
+            box-shadow: 0 0 10px #D20062;
+        }
+        .petal1{
+            position: absolute;
+            width: 12vh;
+            height: 17vh;
+            background-color: #D6589F;
+            border-radius: 100% 10% 25% 10%;
+            top: -270%;
+            right: -10%;
+            box-shadow: 0 0 10px #D6589F;
+        }
+        .flowerbase{
+            position: absolute;
+            width: 10vh;
+            height: 1vh;
+            background: transparent;
+            border-radius: 100% 90%;
+            border: 8px solid #8ac78a;
+            border-color: #8ac78a transparent transparent transparent;
+            top: -20%;
+            right: 47%;
+            transform: rotate(-145deg);
+        }
+        .flowerbase1{
+            position: absolute;
+            width: 13vh;
+            height: 5vh;
+            background: #8ac78a;
+            border-radius: 100% 100% 100% 100%;
+            right: -600%;
+        }
+        .flowerbase2{
+            position: absolute;
+            width: 10vh;
+            height: 1vh;
+            background: transparent;
+            border-radius: 100% 90%;
+            border: 8px solid #8ac78a;
+            border-color: #8ac78a transparent transparent transparent;
+            top: 100%;
+            right: 50%;
+            transform: rotate(145deg);
+        }
+        .flowerbase3{
+            position: absolute;
+            width: 10vh;
+            height: 1vh;
+            background: transparent;
+            border-radius: 100% 90%;
+            border: 8px solid #8ac78a;
+            border-color: #8ac78a transparent transparent transparent;
+            top: 100%;
+            right: -50%;
+            transform: rotate(220deg);
+        }
+        .flowerbase4{
+            position: absolute;
+            width: 10vh;
+            height: 1vh;
+            background: transparent;
+            border-radius: 100% 90%;
+            border: 8px solid #8ac78a;
+            border-color: #8ac78a transparent transparent transparent;
+            top: -10%;
+            right: -50%;
+            transform: rotate(150deg);
+        }
+        .stem{
+            position: absolute;
+            width: 1vh;
+            height: 50vh;
+            background-color: green;
+            animation: a 4s linear infinite;
+        }
+        .gun{
+            position: absolute;
+            width: 1vh;
+            height: 5vh;
+            transform: rotate(45deg);
+            top: 50%;
+            right: -200%;
+        }
+        .leaf{
+            position: absolute;
+            width: 7vh;
+            height: 7vh;
+            background: green;
+            top: -100%;
+            border-radius: 100% 0% 100% 100%;
+            transform: rotate(-45deg);
+            right: -10%;
+        }
+        @keyframes a{
+            0%{
+                transform: translateY(0)
+            }
+            50%{
+                transform: translateY(5vh);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        @keyframes heart{
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(-20vh);
+                opacity: 0;
+            }
+        }
+        @keyframes heart1{
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(-20vh);
+                opacity: 0;
+            }
+        }
+        @keyframes heart2{
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(-20vh);
+                opacity: 0;
+            }
+        }
+        @keyframes heart3{
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(-20vh);
+                opacity: 0;
+            }
+        }
+        @keyframes heart4{
+            0%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(-20vh);
+                opacity: 0;
+            }
+        }
+        @keyframes color{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+        sss{
+            position: absolute;
+            left: 10%;
+        }
+        ssss{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<ssss>
+    <audio src="always-with-me-always-with-you-piano-long-21257.mp3" controls></audio>
+</ssss>
+<sss>
+    <h2 style="color: #FF5BAE;">i give you this</h2>
+    <h2 style="color: #FF5BAE; font-family: Sacrameto, cursive; font-size: 15px;">Your smile is as beautiful as rose, I hope you can always smile.</h2>
+</sss>
+<body>
+    <div class="stem">
+        <div class="gun">
+            <div class="leaf"></div>
+        </div>
+        <div class="gun1">
+            <div class="leaf1"></div>
+        </div>
+        <div class="flowerbase1">
+            <div class="heart"></div>
+            <div class="heart1"></div>
+            <div class="heart2"></div>
+            <div class="heart3"></div>
+            <div class="heart4"></div>
+            <div class="heart5"></div>
+            <div class="flowerbase3"></div>
+            <div class="flowerbase4"></div>
+            <div class="flowerbase2"></div>
+            <div class="flowerbase"></div>
+            <div class="petal" style="z-index: 0;"></div>
+            <div class="petal1" style="z-index: 1;"></div>
+        </div>
+    </div>
+</body>
+</html>
